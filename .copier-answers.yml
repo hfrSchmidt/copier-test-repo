@@ -1,0 +1,36 @@
+# Changes here will be overwritten by Copier
+_commit: v0.1.6
+_src_path: gh:hfrSchmidt/copier-template-py-package
+cicd_tool: github-actions
+commandline_interface: click
+current_year: 2023
+email: h@fr.s
+full_name: Hendrik F.R. Schmidt
+github_username: hfrSchmidt
+initial_version: 0.1.0
+intended_audience: 'Intended Audience :: System Administrators'
+is_open_source: true
+keywords: ''
+min_py_version: '3.7'
+open_source_license: MIT
+package_name: hfrschmidt_test_project
+project_short_description: An awesome test project
+py_dev_version: '3.10'
+pypi_username: hfrSchmidt
+release_status: 'Development Status :: 2 - Pre-Alpha'
+supported_py_versions:
+- '3.7'
+- '3.8'
+- '3.9'
+- '3.10'
+- '3.11'
+target_os: 'Operating System :: POSIX :: Linux'
+topic: 'Topic :: System :: Systems Administration'
+use_author_file: true
+use_black: true
+use_cli: true
+use_coverage: true
+use_github: true
+use_precommit: true
+use_pytest: true
+use_tox: true
