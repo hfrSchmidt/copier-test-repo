@@ -5,8 +5,14 @@ import click
 
 
 @click.command()
-def main(args=None):
+@click.option("-a", "--abcd", type=str)
+def main(abcd, args=None):
     """Console script for hfrschmidt_test_project."""
+
+    if abcd != "" and abcd is not None:
+        click.echo(f"Your option: { abcd }")
+        return 0
+
     click.echo("Place your code into hfrschmidt_test_project.cli.main")
     return 0
 
