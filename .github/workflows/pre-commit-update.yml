@@ -30,12 +30,16 @@ jobs:
         uses: peter-evans/create-pull-request@v5
         with:
           token: "${{ secrets.FPAT }}"
+          committer: GitHub <noreply@github.com>
+          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
+          signoff: false
           commit-message: "chore(dep): Auto-update pre-commit"
           branch: update/pre-commit
           delete-branch: true
+          title: Pre-commit hooks update
           body: |
             Update the tools in the pre-commit
             config to the latest version.
-          labels:
+          labels: |
             dependencies
             pre-commit
