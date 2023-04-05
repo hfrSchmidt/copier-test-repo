@@ -10,6 +10,7 @@ updates:
     schedule:
       interval: "daily"
     commit-message:
+      prefix: chore
       include: scope
     labels:
       - dependencies
@@ -20,6 +21,7 @@ updates:
     schedule:
       interval: "daily"
     commit-message:
+      prefix: chore
       include: scope
     labels:
       - dependencies
