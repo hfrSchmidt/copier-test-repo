@@ -22,11 +22,12 @@ jobs:
         run: pre-commit autoupdate
 
       - name: create a pull request
-        uses: peter-evans/create-pull-request@v4
+        uses: peter-evans/create-pull-request@v5
         with:
           token: "${{ secrets.GITHUB_TOKEN }}"
           commit-message: "chore(dep): Auto-update pre-commit"
           branch: update/pre-commit
+          delete-branch: true
           body: |
             Update the tools in the pre-commit
             config to the latest version.
