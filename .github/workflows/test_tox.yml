@@ -1,0 +1,43 @@
+name: test_tox
+
+on:
+  pull_request:
+    branches: [ "master", "main" ]
+    paths-ignore: [ "docs/**" ]
+
+  push:
+    branches: [ "master", "main" ]
+    paths-ignore: [ "docs/**" ]
+
+concurrency:
+  group: ${{ github.head_ref || github.run_id }}-test_tox
+  cancel-in-progress: true
+
+jobs:
+  test_tox:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python_version: [
+          "3.7",
+          "3.8",
+          "3.9",
+          "3.10",
+          "3.11"
+        ]
+    steps:
+      - name: Checkout Code Repository
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python_version }}
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install tox tox-gh-actions
+
+      - name: Run tox
+        run: tox
