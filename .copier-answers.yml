@@ -1,9 +1,9 @@
 # Changes here will be overwritten by Copier
-_commit: v0.1.10
+_commit: v0.1.11
 _src_path: gh:hfrSchmidt/copier-template-py-package
 cicd_tool: github-actions
 commandline_interface: click
-current_year: 2023
+current_year: '2023'
 email: h@fr.s
 full_name: Hendrik F.R. Schmidt
 github_username: hfrSchmidt

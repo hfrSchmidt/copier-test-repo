@@ -24,7 +24,7 @@ jobs:
       - name: create a pull request
         uses: peter-evans/create-pull-request@v5
         with:
-          token: "${{ secrets.GITHUB_TOKEN }}"
+          token: "${{ secrets.FPAT }}"
           commit-message: "chore(dep): Auto-update pre-commit"
           branch: update/pre-commit
           delete-branch: true
