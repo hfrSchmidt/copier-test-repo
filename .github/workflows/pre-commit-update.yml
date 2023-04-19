@@ -32,6 +32,6 @@ jobs:
           body: |
             Update the tools in the pre-commit
             config to the latest version.
-          labels:
+          labels: |
             dependencies
             pre-commit
