@@ -1,4 +1,4 @@
 coverage==7.2.7
 pytest==7.3.2
-pre-commit==3.3.2
+pre-commit==3.3.3
 click==8.1.3
