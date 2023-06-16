@@ -177,11 +177,20 @@ legacy_tox_ini = """
     3.10: py310
     3.11: py311
   [testenv]
-  description = run unit tests with coverage analysis
+  description = run unit tests
+  deps =
+    -r requirements/test.txt
+  commands = pytest tests
+  [testenv:cov]
+  description = run coverage analysis
+  base_python = python3.10
   deps =
     pytest
-    pytest-cov
-  commands = pytest --cov hfrschmidt_test_project --cov-append --cov-report=term-missing
+    coverage
+  commands =
+    coverage run -p -m pytest
+    coverage combine
+    coverage json
 
   [testenv:clean]
   description = remove coverage reports

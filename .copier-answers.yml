@@ -1,5 +1,5 @@
 # Changes here will be overwritten by Copier
-_commit: v0.1.13
+_commit: v0.1.14
 _src_path: gh:hfrSchmidt/copier-template-py-package
 cicd_tool: github-actions
 commandline_interface: click

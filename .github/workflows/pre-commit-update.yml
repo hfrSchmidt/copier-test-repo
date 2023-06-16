@@ -25,7 +25,7 @@ jobs:
         uses: peter-evans/create-pull-request@v5
         with:
           token: "${{ secrets.FPAT }}"
-          commit-message: "chore(dep): Auto-update pre-commit"
+          commit-message: "chore(deps): Auto-update pre-commit"
           title: Auto-update pre-commit
           branch: update/pre-commit
           delete-branch: true
