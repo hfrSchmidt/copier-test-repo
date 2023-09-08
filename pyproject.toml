@@ -38,7 +38,7 @@ readme = "README.rst"  # Optional
 # 'Programming Language' classifiers above, 'pip install' will check this
 # and refuse to install the project if the version does not match. See
 # https://packaging.python.org/guides/distributing-packages-using-setuptools/#python-requires
-requires-python = ">=3.7"
+requires-python = ">=3.8"
 
 # This is either text indicating the license for the distribution, or a file
 # that contains the license
@@ -90,8 +90,6 @@ classifiers = [  # Optional
   # that you indicate you support Python 3. These classifiers are *not*
   # checked by "pip install". See instead "python_requires" below.
   "Programming Language :: Python",
-
-  "Programming Language :: Python :: 3.7",
 
   "Programming Language :: Python :: 3.8",
 
@@ -164,14 +162,12 @@ legacy_tox_ini = """
     virtualenv>20.2
   min_version = 4.0
   env_list =
-    py37
     py38
     py39
     py310
     py311
   [gh-actions]
   python =
-    3.7: py37
     3.8: py38
     3.9: py39
     3.10: py310
