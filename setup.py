@@ -46,7 +46,6 @@ setuptools.setup(
         "Operating System :: POSIX :: Linux",
         "Topic :: System :: Systems Administration",
         "Programming Language :: Python",
-        "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
@@ -60,7 +59,7 @@ setuptools.setup(
             "hfrschmidt_test_project=hfrschmidt_test_project.cli:main",
         ],
     },
-    python_requires=">=3.7",
+    python_requires=">=3.8",
     include_package_data=True,
     zip_safe=False,
 )

@@ -11,7 +11,7 @@ initial_version: 0.1.0
 intended_audience: 'Intended Audience :: System Administrators'
 is_open_source: true
 keywords: ''
-min_py_version: '3.7'
+min_py_version: '3.8'
 open_source_license: MIT
 package_name: hfrschmidt_test_project
 project_short_description: An awesome test project
@@ -19,7 +19,6 @@ py_dev_version: '3.10'
 pypi_username: hfrSchmidt
 release_status: 'Development Status :: 2 - Pre-Alpha'
 supported_py_versions:
-- '3.7'
 - '3.8'
 - '3.9'
 - '3.10'
